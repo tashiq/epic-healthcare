@@ -14,7 +14,7 @@ const Details = () => {
     }, []);
     const service = services?.find(item => item.id === serviceId);
     return (
-        <div>
+        <div className="container">
             {
                 service?.id && <Service data={service} key={serviceId}></Service>
             }

@@ -1,23 +1,19 @@
 import Banner from "../Banner/Banner";
-import Doctors from "../Doctors/Doctors";
-import Faq from "../faq/Faq";
+import Faq from "../Faq/Faq";
+import Map from "../Map/Map";
 import Services from "../Services/Services";
 
 const Home = () => {
 
     return (
-        <div id="home " className="pt-4 mt-2">
+        <div className="pt-4 mt-2">
             <Banner>
-
             </Banner>
             <Services>
-
             </Services>
-            <Doctors>
-
-            </Doctors>
+            <Map>
+            </Map>
             <Faq>
-
             </Faq>
         </div>
     );

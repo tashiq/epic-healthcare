@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => {
     return (
-        <div className="bg-dark text white d-flex justify-content-between align-items-center">
+        <div className="bg-dark text white d-flex justify-content-between align-items-center container">
             <div>
                 <h4>Quick links</h4>
                 <ul>

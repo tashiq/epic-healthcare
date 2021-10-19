@@ -9,11 +9,11 @@ const Doctors = () => {
             .then(data => setDoctors(data));
     }, [])
     return (
-        <div id="doctors" className="container">
+        <div id="doctors" className="container p-5 m-3">
             <h3 className="text-warning">Our Specialist</h3>
             <Row lg={3} xs={1} md={2}>
                 {
-                    doctors?.map(doctor => <Doctor data={doctor}></Doctor>)
+                    doctors?.map(doctor => <Doctor data={doctor} key={doctor.id}></Doctor>)
                 }
             </Row>
         </div>

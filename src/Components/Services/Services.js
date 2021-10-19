@@ -16,7 +16,7 @@ const Services = () => {
             <h2>This is services</h2>
             <Row lg={3} md={2} xs={1} responsive="md" className="mx-auto">
                 {
-                    services?.map(service => <Service data={service}>
+                    services?.map(service => <Service data={service} key={service.id}>
                         <Button variant="primary">
                             <Link to={`/services/` + service.id} className="text-decoration-none text-white">View</Link>
                         </Button>

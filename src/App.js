@@ -1,4 +1,3 @@
-
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Header from './Components/Header/Header';
 import Home from './Components/Home/Home';
@@ -8,7 +7,9 @@ import Login from './Components/Login.js/Login';
 import Register from './Components/Register/Register';
 import NotFound from './Components/NotFound/NotFound';
 import Details from './Components/Details/Details';
-
+import PrivateRoute from './Components/PrivateRoute/PrivateRoute'
+import Book from './Components/Book/Book';
+import Doctors from './Components/Doctors/Doctors'
 function App() {
 
   return (
@@ -22,9 +23,15 @@ function App() {
           <Route exact path='/home'>
             <Home></Home>
           </Route>
-          <Route path='/services/:serviceId'>
+          <PrivateRoute exact path='/doctors'>
+            <Doctors></Doctors>
+          </PrivateRoute>
+          <PrivateRoute exact path='/book'>
+            <Book></Book>
+          </PrivateRoute>
+          <PrivateRoute path='/services/:serviceId'>
             <Details></Details>
-          </Route>
+          </PrivateRoute>
           <Route exact path='/login'>
             <Login></Login>
           </Route>

@@ -3,43 +3,38 @@ import { Accordion } from 'react-bootstrap';
 
 const Faq = () => {
     return (
-        <div id='faq' className="my-3 container">
-            <h2>Frequenty Asked Questions</h2>
+        <div className="container py-2 my-1" id="faq">
+            <h3>Frequently Asked Question</h3>
             <Accordion defaultActiveKey="0">
                 <Accordion.Item eventKey="0">
-                    <Accordion.Header> How To Get In Touch With The Hospital?</Accordion.Header>
+                    <Accordion.Header>How To Get In Touch With The Hospital?</Accordion.Header>
                     <Accordion.Body>
-                        <ul>
-                            <li>Website: xyz.com</li>
-                            <li>Email: response@alsd.com</li>
-                            <li>24 hours online chat</li>
-                            <li>Telephone: +91-22-0398457394</li>
-                            <li>Coordinator details</li>
-                            <li>Facebook</li>
-                        </ul>
+                        Website: www.sevenhillshospital.com <br />
+                        Email: response@sevenhillshospital.com <br />
+                        24 hours online chat
+                        Telephone: <br />
+                        Direct walk-in <br />
+                        Coordinator details <br />
+                        Facebook
                     </Accordion.Body>
                 </Accordion.Item>
                 <Accordion.Item eventKey="1">
-                    <Accordion.Header>Do I Need Any Agent Or Facilitator To Assist Me To Get In Touch With epic Hospital?</Accordion.Header>
+                    <Accordion.Header> Do I Need Any Agent Or Facilitator To Assist Me To Get In Touch With Sevenhills Hospital?</Accordion.Header>
                     <Accordion.Body>
-                        No. You can directly get in touch with our coordinators and in case you wish to involve your family physician or well-wishers, then they are more than welcome to get connected to
+                        No. You can directly get in touch with our coordinators and in case you wish to involve your family physician or well-wishers, then they are more than welcome to get connected to SevenHills Hospital.
                     </Accordion.Body>
                 </Accordion.Item>
                 <Accordion.Item eventKey="2">
-                    <Accordion.Header> How Can I Share My Medical Records?</Accordion.Header>
+                    <Accordion.Header> With Whom Can I Get In Touch With To Avail Cashless Benefit?</Accordion.Header>
                     <Accordion.Body>
-                        You may share your reports/medical records by following the steps mentioned here or by emailing the same to  </Accordion.Body>
-                </Accordion.Item>
-                <Accordion.Item eventKey="3">
-                    <Accordion.Header>My Reports Are In Regional Language (Swahili/Arabic/French). What Do I Do?</Accordion.Header>
-                    <Accordion.Body>
-                        We would recommend getting the summary of your records in the English language from your family doctor. In case that is not possible, we will try and do the needful.
+                        You may get in touch with Ms. Archana Dubey , our International Patient Coordinator, on archanadubey@sevenhillshosital.com or on +919821433709.
                     </Accordion.Body>
                 </Accordion.Item>
-                <Accordion.Item eventKey="4">
-                    <Accordion.Header>Can My Attendant Get A Medical Check-Up If Required?</Accordion.Header>
+                <Accordion.Item eventKey="3">
+                    <Accordion.Header>s There Any Vaccine Which I Need To Take Prior To Coming To India?</Accordion.Header>
                     <Accordion.Body>
-                        Surely, he/she may avail health check-up packages with our wellness centre. Your case manager will assist you with the same.
+                        All foreigners must get inoculated against Yellow Fever at least 10 (ten) days prior to applying for the Visa and must produce genuine  valid Yellow Fever Vaccination Card both at the Visa Counter of the Embassy and at the Indian airport or check-post of entry.
+                        Apart from Yellow Fever vaccination certificate as per Govt. of India mandate, all passengers arriving in India effective 14th February, 2014, from Kenya, Ethiopia, Afghanistan, Israel, Pakistan, Nigeria and Somalia, will have to carry Oral Polio Vaccination (OPV) Certificate taken six weeks prior to entry. This certificate is mandatory for both Adults and Children. All travelers from the above seven countries will be required to have a written record of vaccination (patient-retained record) for polio in their possession, preferably using IHR 2005 International Certificate of Vaccination or Prophylaxis from a hospital or centre administering OPV.
                     </Accordion.Body>
                 </Accordion.Item>
             </Accordion>
