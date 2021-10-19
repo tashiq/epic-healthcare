@@ -1,10 +1,23 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { Row } from 'react-bootstrap';
+import Service from '../Service/Service';
 
 const Services = () => {
+    const [services, setServices] = useState();
+    useEffect(() => {
+        fetch('/Services.json')
+            .then(res => res.json())
+            .then(data => setServices(data))
+    }, [])
+
     return (
-        <div id="services">
+        <div id="services" className="mx-auto container">
             <h2>This is services</h2>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate voluptatem odit iure, nobis, eaque dicta id quisquam pariatur, facere maiores dolor asperiores repellendus! Quia nobis explicabo blanditiis aspernatur facilis officia!r sit amet consectetur adipisicing elit. Possimus, atque! Accusantium iusto hic repellat eum molestias facilis suscipit, ut ab et doloribus corporis itaque expedita harum ex eos quis temporibus.r sit amet consectetur adipisicing elit. Possimus, atque! Accusantium iusto hic repellat eum molestias facilis suscipit, ut ab et doloribus corporis itaque expedita harum ex eos quis temporibus.r sit amet consectetur adipisicing elit. Possimus, atque! Accusantium iusto hic repellat eum molestias facilis suscipit, ut ab et doloribus corporis itaque expedita harum ex eos quis temporibus.r sit amet consectetur adipisicing elit. Possimus, atque! Accusantium iusto hic repellat eum molestias facilis suscipit, ut ab et doloribus corporis itaque expedita harum ex eos quis temporibus.r sit amet consectetur adipisicing elit. Possimus, atque! Accusantium iusto hic repellat eum molestias facilis suscipit, ut ab et doloribus corporis itaque expedita harum ex eos quis temporibus.
+            <Row lg={3} md={2} xs={1} responsive="md" className="mx-auto">
+                {
+                    services?.map(service => <Service data={service}></Service>)
+                }
+            </Row>
         </div>
     );
 };

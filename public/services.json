@@ -1,0 +1,66 @@
+[
+    {
+        "id": "616e9bdfcc3b3d799ff655e4",
+        "picture": "https://medschool.ucla.edu/Images/Site-Apply/StudentLife/Skyword-DayintheLife/OB-GYN.png",
+        "name": "Gynaecology",
+        "about": "Gynaecology or gynecology (see spelling differences) is the medical practice dealing with the health of the female reproductive system",
+        "cost": 1234,
+        "min-age": 18
+    },
+    {
+        "id": "616e9bdfcc3b3d799ff655e4",
+        "picture": "https://www.drugs.com/health-guide/images/ddca3f92-4b8e-4672-bb6b-f3594ad4e304.jpg",
+        "name": "X-ray",
+        "about": "X-rays are a type of radiation called electromagnetic waves. X-ray imaging creates pictures of the inside of your body. The images show the parts of your body in different shades of black and white. ... The most familiar use of x-rays is checking for fractures (broken bones), but x-rays are also used in other ways.",
+        "cost": 1253,
+        "min-age": 15
+    },
+    {
+        "id": "616e9bdf19680ddd6ce56f38",
+        "picture": "https://cdn-prod.medicalnewstoday.com/content/images/articles/146/146309/mri-scan.jpg",
+        "name": "MRI",
+        "about": "Magnetic resonance imaging (MRI) is a type of scan that uses strong magnetic fields and radio waves to produce detailed images of the inside of the body. An MRI scanner is a large tube that contains powerful magnets. You lie inside the tube during the scan",
+        "cost": 32453,
+        "min-age": 15
+    },
+    {
+        "id": "616e9bdf3de4dad9b8f93769",
+        "picture": "https://post.medicalnewstoday.com/wp-content/uploads/sites/3/2020/02/153201_2200-800x1200.jpg",
+        "name": "CT scan",
+        "about": "Computed tomography (CT) scan is a useful diagnostic tool for detecting diseases and injuries. It uses a series of X-rays and a computer to produce a 3D image of soft tissues and bones. CT is a painless, noninvasive way for your healthcare provider to diagnose conditions",
+        "cost": 534253,
+        "min-age": 18
+    },
+    {
+        "id": "616e9bdf8ad31654dd9a0afd",
+        "picture": "https://images.wisegeek.com/heart-highlighted-on-male-model.jpg",
+        "name": "Cardiography",
+        "about": "Cardiography is the diagnostic recording of the heart's activity by electronic means. ... It is used to test, diagnose, and monitor problems relating to the heart and the flow of blood throughout the body. Cardiography is the diagnostic recording of the heart's activity by electronic means",
+        "cost": 125324,
+        "min-age": 11
+    },
+    {
+        "id": "616e9bdffaa7c7aec4d517ba",
+        "picture": "https://ecglibrary.com/ecgs/norm.png",
+        "name": "ECG",
+        "about": "An electrocardiogram (ECG) is a simple test that can be used to check your heart's rhythm and electrical activity. Sensors attached to the skin are used to detect the electrical signals produced by your heart each time it beats.",
+        "cost": 15234,
+        "min-age": 12
+    },
+    {
+        "id": "616e9bdf099a00951466be5b",
+        "picture": "https://assets-us-01.kc-usercontent.com/406ac8c6-58e8-00b3-e3c1-0c312965deb2/5ef076fb-74cd-47b6-8c02-4c3f5acfb731/Radiography%20Discipline%20Image.jpg",
+        "name": "Radiography",
+        "about": "Radiography is the art and science of using radiation to provide images of the tissues, organs, bones, and vessels that comprise the human body. Radiologists, physicians who have had special training in interpreting diagnostic images,",
+        "cost": 53245,
+        "min-age": 17
+    },
+    {
+        "id": "616e9bdf8417e9731b2e4342",
+        "picture": "https://i2.wp.com/www.pasindusarchives.com/wp-content/uploads/2018/04/Post-Picture-USS-.png?fit=1000%2C1000&ssl=1",
+        "name": "Ultrasonography",
+        "about": "Medical ultrasound includes diagnostic imaging techniques, as well as therapeutic applications of ultrasound. In diagnosis, it is used to create an image of internal body structures such as tendons, muscles, joints, blood vessels, and internal organs.",
+        "cost": 12231,
+        "min-age": 25
+    }
+]

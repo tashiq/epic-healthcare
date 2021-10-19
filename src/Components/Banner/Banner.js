@@ -3,7 +3,7 @@ import { Carousel } from 'react-bootstrap';
 
 const Banner = () => {
     return (
-        <div id="banner">
+        <div id="banner" className="mt-3">
             <Carousel variant="dark" className="container mx-auto w-75">
                 <Carousel.Item>
                     <img
