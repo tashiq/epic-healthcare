@@ -1,10 +1,22 @@
-import useAuth from '../../hooks/useAuth'
+import { Container, Nav, Navbar } from "react-bootstrap";
+import { HashLink } from 'react-router-hash-link';
+
 const Header = () => {
-    const { isLoading } = useAuth();
-    console.log(isLoading)
     return (
         <div>
-            <h1>Hijllsjdflksdjf</h1>
+            <Navbar bg="dark" variant="dark">
+                <Container>
+                    <Navbar.Brand>Epic Health Care</Navbar.Brand>
+                    <Nav className="ms-auto">
+                        <Nav.Link as={HashLink} to="/home">Home</Nav.Link>
+                        <Nav.Link as={HashLink} to="/home#services">Services</Nav.Link>
+                        <Nav.Link as={HashLink} to="/home#doctors">Doctors</Nav.Link>
+                        <Nav.Link as={HashLink} to="/home#faq">FAQ</Nav.Link>
+                        <Nav.Link as={HashLink} to="/login"><i className="fas fa-sign-in-alt" title="Sign In"></i></Nav.Link>
+                        <Nav.Link as={HashLink} to="/home"><i className="fas fa-sign-out-alt" title="Log Out"></i></Nav.Link>
+                    </Nav>
+                </Container>
+            </Navbar>
         </div>
     );
 };
