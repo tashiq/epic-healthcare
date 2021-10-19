@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Button, Col } from 'react-bootstrap';
+import { Card, Col } from 'react-bootstrap';
 
 const Service = (props) => {
     const { name, picture, about } = props.data
@@ -12,7 +12,7 @@ const Service = (props) => {
                     <Card.Text>
                         {about}
                     </Card.Text>
-                    <Button variant="primary">View Details</Button>
+                    {props.children}
                 </Card.Body>
             </Card>
         </Col>

@@ -7,6 +7,7 @@ import AuthProvider from './Context/AuthProvider';
 import Login from './Components/Login.js/Login';
 import Register from './Components/Register/Register';
 import NotFound from './Components/NotFound/NotFound';
+import Details from './Components/Details/Details';
 
 function App() {
 
@@ -20,6 +21,9 @@ function App() {
           </Route>
           <Route exact path='/home'>
             <Home></Home>
+          </Route>
+          <Route path='/services/:serviceId'>
+            <Details></Details>
           </Route>
           <Route exact path='/login'>
             <Login></Login>
