@@ -38,6 +38,8 @@ const useFirebase = () => {
         updateProfile(auth.currentUser, {
             displayName: name
         })
+            .then()
+            .catch(error => console.log(error.message))
     }
     const logOut = () => {
         setIsLoading(true)

@@ -3,7 +3,7 @@ import { HashLink } from 'react-router-hash-link';
 import useAuth from "../../hooks/useAuth";
 const Header = () => {
     const { user, logOut } = useAuth();
-
+    console.log(user);
     const logOutHandle = (e) => {
         e.preventDefault();
         logOut();

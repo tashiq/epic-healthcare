@@ -21,8 +21,10 @@ const Register = () => {
     const newUser = (e) => {
         e.preventDefault();
         createUser(email, password);
+
         updateName(name);
-        history.push('/home');
+        history.push('/home')
+        console.log(user);
     }
     const google = (e) => {
         e.preventDefault()
