@@ -10,7 +10,7 @@ const Header = () => {
     }
     return (
         <div>
-            <Navbar bg="dark" variant="dark" expand="lg" fixed="top" className="container">
+            <Navbar bg="dark" variant="dark" expand="lg" fixed="top" className="container" style={{ height: "50px" }}>
                 <Container>
                     <Navbar.Brand>Epic Health Care</Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />

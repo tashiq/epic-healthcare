@@ -9,12 +9,12 @@ const Services = () => {
         fetch('/Services.json')
             .then(res => res.json())
             .then(data => setServices(data))
-    }, [])
+    }, []);
 
     return (
-        <div id="services" className="mx-auto container">
-            <h2>This is services</h2>
-            <Row lg={3} md={2} xs={1} responsive="md" className="mx-auto">
+        <div id="services" className="mx-auto container p-2 my-4">
+            <h3 className="text-info">Our speciality</h3>
+            <Row lg={3} md={2} xs={1} className="mx-auto">
                 {
                     services?.map(service => <Service data={service} key={service.id}>
                         <Button variant="primary">

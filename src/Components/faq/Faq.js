@@ -3,8 +3,8 @@ import { Accordion } from 'react-bootstrap';
 
 const Faq = () => {
     return (
-        <div className="container py-2 my-1" id="faq">
-            <h3>Frequently Asked Question</h3>
+        <div className="container py-2 my-3" id="faq">
+            <h3 className="text-info py-3">Frequently Asked Question</h3>
             <Accordion defaultActiveKey="0">
                 <Accordion.Item eventKey="0">
                     <Accordion.Header>How To Get In Touch With The Hospital?</Accordion.Header>
