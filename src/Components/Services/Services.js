@@ -12,7 +12,7 @@ const Services = () => {
     }, []);
     document.title = 'Epic Health Care| Home'
     return (
-        <div id="services" className="px-4 pt-5">
+        <div id="services" className="container pt-5">
             <h3 className="text-center py-2">Our speciality</h3>
             <Row lg={3} md={2} xs={1} className="mx-auto">
                 {

@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => {
     return (
-        <div className='bg-dark text-light'>
+        <div className='bg-dark text-light footer'>
             <div className="text white d-flex justify-content-between align-items-start text-light p-4 mt-5 flex-wrap">
                 <div>
                     <h4>Quick links</h4>
