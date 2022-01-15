@@ -2,9 +2,10 @@ import React from 'react';
 import { Accordion } from 'react-bootstrap';
 
 const Faq = () => {
+    document.title = 'Epic Health Care| FAQ';
     return (
-        <div className="container py-2 my-3" id="faq">
-            <h3 className="text-info py-3">Frequently Asked Question</h3>
+        <div className="container" id="faq" style={{ marginTop: '80px' }}>
+            <h3 className="text-info py-3 text-center">Frequently Asked Question</h3>
             <Accordion defaultActiveKey="0">
                 <Accordion.Item eventKey="0">
                     <Accordion.Header>How To Get In Touch With The Hospital?</Accordion.Header>
@@ -31,7 +32,7 @@ const Faq = () => {
                     </Accordion.Body>
                 </Accordion.Item>
                 <Accordion.Item eventKey="3">
-                    <Accordion.Header>s There Any Vaccine Which I Need To Take Prior To Coming To India?</Accordion.Header>
+                    <Accordion.Header>Is There Any Vaccine Which I Need To Take Prior To Coming To Bangladesh?</Accordion.Header>
                     <Accordion.Body>
                         All foreigners must get inoculated against Yellow Fever at least 10 (ten) days prior to applying for the Visa and must produce genuine  valid Yellow Fever Vaccination Card both at the Visa Counter of the Embassy and at the Indian airport or check-post of entry.
                         Apart from Yellow Fever vaccination certificate as per Govt. of India mandate, all passengers arriving in India effective 14th February, 2014, from Kenya, Ethiopia, Afghanistan, Israel, Pakistan, Nigeria and Somalia, will have to carry Oral Polio Vaccination (OPV) Certificate taken six weeks prior to entry. This certificate is mandatory for both Adults and Children. All travelers from the above seven countries will be required to have a written record of vaccination (patient-retained record) for polio in their possession, preferably using IHR 2005 International Certificate of Vaccination or Prophylaxis from a hospital or centre administering OPV.

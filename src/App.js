@@ -10,6 +10,8 @@ import Details from './Components/Details/Details';
 import PrivateRoute from './Components/PrivateRoute/PrivateRoute'
 import Book from './Components/Book/Book';
 import Doctors from './Components/Doctors/Doctors'
+import Map from './Components/Map/Map';
+import Faq from './Components/faq/Faq';
 function App() {
 
   return (
@@ -22,6 +24,12 @@ function App() {
           </Route>
           <Route exact path='/home'>
             <Home></Home>
+          </Route>
+          <Route exact path="/map">
+            <Map></Map>
+          </Route>
+          <Route exact path="/faq">
+            <Faq />
           </Route>
           <PrivateRoute exact path='/doctors'>
             <Doctors></Doctors>

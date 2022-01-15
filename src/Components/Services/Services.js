@@ -10,15 +10,15 @@ const Services = () => {
             .then(res => res.json())
             .then(data => setServices(data))
     }, []);
-
+    document.title = 'Epic Health Care| Home'
     return (
-        <div id="services" className="mx-auto container p-2 my-4">
-            <h3 className="text-info">Our speciality</h3>
+        <div id="services" className="px-4 pt-5">
+            <h3 className="text-center py-2">Our speciality</h3>
             <Row lg={3} md={2} xs={1} className="mx-auto">
                 {
                     services?.map(service => <Service data={service} key={service.id}>
                         <Button variant="primary">
-                            <Link to={`/services/` + service.id} className="text-decoration-none text-white">View</Link>
+                            <Link to={`/services/` + service.id} className="text-decoration-none text-white">Details</Link>
                         </Button>
                     </Service>)
                 }

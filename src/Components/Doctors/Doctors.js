@@ -8,9 +8,10 @@ const Doctors = () => {
             .then(res => res.json())
             .then(data => setDoctors(data));
     }, [])
+    document.title = 'Epic Health Care| Doctors';
     return (
-        <div id="doctors" className="container p-5 m-3">
-            <h3 className="text-warning">Our Specialist</h3>
+        <div id="doctors" style={{ margin: '90px 14px 14px 0', }}>
+            <h3 className="text-info text-center">Our Specialist</h3>
             <Row lg={3} xs={1} md={2}>
                 {
                     doctors?.map(doctor => <Doctor data={doctor} key={doctor.id}></Doctor>)

@@ -1,21 +1,21 @@
 import React from 'react';
-import { Card, Col } from 'react-bootstrap';
+// import { Card, Col } from 'react-bootstrap';
 
 const Service = (props) => {
     const { name, picture, about } = props.data
     return (
-        <Col>
-            <Card style={{ width: '18rem' }} className="p-1 m-2">
-                <Card.Img variant="top" src={picture} />
-                <Card.Body>
-                    <Card.Title>{name}</Card.Title>
-                    <Card.Text>
-                        {about}
-                    </Card.Text>
-                    {props.children}
-                </Card.Body>
-            </Card>
-        </Col>
+        <div className='col mt-3' data-aos="fade-up" data-aos-duration="1000">
+            <div className="card" style={{ minWidth: '18rem' }}>
+                <img src={picture} className="card-img-top card-img" alt="..." />
+                <div className="card-body">
+                    <h5 className="card-title">{name}</h5>
+                    <p className="card-text">{about}</p>
+                    <div className="card-bottom">
+                        {props.children}
+                    </div>
+                </div>
+            </div>
+        </div>
     );
 };
 

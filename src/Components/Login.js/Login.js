@@ -14,6 +14,7 @@ const Login = () => {
     const getPass = (e) => {
         setPass(e.target.value);
     }
+    document.title = 'Epic Health Care| Login';
     const signIn = (e) => {
         e.preventDefault();
         emailSignIn(email, pass);

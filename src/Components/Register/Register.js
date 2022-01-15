@@ -4,6 +4,7 @@ import { Link, useHistory } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
 
 const Register = () => {
+    document.title = 'Epic Health Care| Register';
     const history = useHistory();
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
